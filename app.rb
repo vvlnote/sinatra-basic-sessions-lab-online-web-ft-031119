@@ -17,6 +17,7 @@ class App < Sinatra::Base
     session = params[:item]
     @session = session
     puts @session
+    binding.pry
     erb :checkout
   end
   
